@@ -1,7 +1,7 @@
 require("dotenv").config();
 var axios = require("axios");
+var fs = require("fs");
 var Spotify = require('node-spotify-api');
-
 var keys = require("./keys.js");
 
 var spotify = new Spotify(keys.spotify);
@@ -16,9 +16,9 @@ var tempSearch = process.argv.slice(3).join(" ");
 
 // liri commands:
 // concert-this
-// spotify-this-song
+// spotify-this-song *done for now, but can clean up code-also, it plays entire song instead of preview..
 // movie-this *done for now, but can clean up axios function use
-// do-what-it-says
+// do-what-it-says *need to add math random feature to do different commands..
 var command = process.argv[2]
 switch (command) {
     case "concert-this":
@@ -26,21 +26,30 @@ switch (command) {
         break;
 
     case "spotify-this-song":
-        spotifySearch();
-        console.log("spotify-this-song");
+        if (tempSearch === '') {
+            tempSearch = 'Ace of Base';
+            spotifySearch();
+        } else {
+            spotifySearch();
+        }
         break;
 
     case "movie-this": //this is working
-        console.log("movie-this");
-        movie();
+        if (tempSearch === '') {
+            tempSearch = 'Mr. Nobody';
+            movie();
+        } else {
+            movie();
+        }
         break;
 
     case "do-what-it-says":
         console.log("do-what-it-says");
+        doSays();
         break;
 
     default:
-        console.log("The Sign-Ace of Base");
+        console.log("Choose a valid command");
 
 }
 
@@ -88,4 +97,32 @@ function spotifySearch() {
 
         console.log("Album Name: ", data.tracks.items[0].album.name)
     });
+}
+
+function doSays() {
+    fs.readFile("random.txt", "utf8", function(err, data){
+        if (err) {
+            return console.log(err);
+        } 
+        console.log("original text: ", data);
+        //dataSplit = data.split(",")
+        dataSplit = data.split('\n') //array of returned text with command at dataSplit[0], and searchInput at dataSplit[1]
+        console.log(dataSplit)
+
+        dataSplit.forEach(function(item){
+            itemArr = item.split(',')
+            // console.log("Item Array: ", itemArr)
+
+            command = itemArr[0]
+            tempSearch = itemArr[1]
+            console.log(command)
+            console.log(tempSearch)
+            if (command === 'spotify-this-song') {
+                spotifySearch()
+            } else {
+                movie()
+            }
+            // spotifySearch()
+        })
+    })
 }
