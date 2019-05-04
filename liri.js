@@ -8,12 +8,12 @@ var keys = require("./keys.js");
 
 var spotify = new Spotify(keys.spotify);
 
-var userInput = process.argv.slice(3).join(" ");
+var userInput = process.argv.slice(3).join(" ")//.replace("'","\'" );
 
 // liri commands:
 // concert-this - *done*
 // spotify-this-song *done for now, need to fix 'null' result
-// movie-this *done for now, but can clean up axios function use
+// movie-this *done for now, but does not work with "Pan's Labyrinth"
 // do-what-it-says *concert-need to remove quotes from second portion of array
 
 var command = process.argv[2]
@@ -57,6 +57,7 @@ switch (command) {
 function bands() {
     var bandQueryURL = "https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp"
     axios.get(bandQueryURL).then(function (response) {
+        console.log(bandQueryURL)
         var response = response.data
         //console.log(response)
         response.forEach(function (event) {
@@ -75,13 +76,15 @@ function bands() {
 }
 
 function movie() {
-    var queryURL = "http://www.omdbapi.com/?t=" + userInput + "&y=&plot=short&apikey=d7cb222c";
+    console.log(userInput)
+    var queryURL = "http://www.omdbapi.com/?t="+ userInput +"&y=&plot=short&apikey=d7cb222c";
     axios.get(queryURL).then(function (response) {
+        console.log(queryURL)
         var responseInfo = response.data;
         //console.log(responseInfo);
         var ratingsArr = responseInfo.Ratings
-        // console.log(ratingsArr)
-        // console.log(ratingsArr.length)
+        console.log(ratingsArr)
+        console.log(ratingsArr.length)
         var rottenTom = ""
         if (ratingsArr.length === 1) {
             rottenTom = "Unavailable"
@@ -111,11 +114,15 @@ function spotifySearch() {
         }
         var spotifyInfo = data.tracks.items[0]
         //console.log(data.tracks.items[0])
+        var songPreviewConsole = "Song Preview: " + spotifyInfo.preview_url
+        if (spotifyInfo.preview_url === null) {
+            songPreviewConsole = "Entire Song: " + spotifyInfo.album.external_urls.spotify
+        }
         var searchData = [
             "Artists: " + spotifyInfo.album.artists[0].name,
             "Song Name: " + spotifyInfo.name,
-            // "Entire Song: " + spotifyInfo.album.external_urls.spotify,
-            "Song Preview: " + spotifyInfo.preview_url,
+            //"Entire Song: " + spotifyInfo.album.external_urls.spotify,
+            songPreviewConsole,
             "Album Name: " + spotifyInfo.album.name,
             "--------------------------------------"
         ].join('\n\n')
@@ -131,19 +138,20 @@ function doSays() {
         // console.log("original text: ", data);
         function splitData(){
         var dataSplit = data.split('\n') //splits each line of text into dataSplit array
-        //console.log(dataSplit)
+        console.log(dataSplit)
         var dataSplitRand = dataSplit[Math.floor(Math.random() * dataSplit.length)]
-        //console.log(dataSplitRand)
+        console.log(dataSplitRand)
         var splitRandCommInp = dataSplitRand.split(',')
         command = splitRandCommInp[0]
-        userInput = splitRandCommInp[1]//this needs to remove quotes, because concert-this "band name" does not work
+        //userInput = splitRandCommInp[1]
+        var userInputQuoted = splitRandCommInp[1]
+        //this needs to remove quotes, because concert-this "band name" does not work when reading from text file
+        userInput = userInputQuoted.substring(1, userInputQuoted.length-1);
         console.log(command)
         console.log(userInput)
         }
         splitData()
         commandSwitch()
-
     })
 }
-
 

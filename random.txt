@@ -2,5 +2,5 @@ spotify-this-song,"I Want it That Way"
 spotify-this-song,"Move Along"
 movie-this,"Deadpool"
 movie-this,"Dr. Strange"
-concert-this,imagine dragons
-concert-this,ed sheeran
+concert-this,"Ed Sheeran"
+concert-this,"Imagine Dragons"
