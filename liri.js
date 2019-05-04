@@ -11,8 +11,8 @@ var spotify = new Spotify(keys.spotify);
 var userInput = process.argv.slice(3).join(" ");
 
 // liri commands:
-// concert-this - needs moment to format date to MM/DD/YYYY
-// spotify-this-song *done for now, but can clean up code-also, it plays entire song instead of preview..
+// concert-this - *done*
+// spotify-this-song *done for now, but can clean up code
 // movie-this *done for now, but can clean up axios function use
 // do-what-it-says *need to add math random feature to do different commands..
 
@@ -32,7 +32,7 @@ switch (command) {
         }
         break;
 
-    case "movie-this": //this is working
+    case "movie-this":
         if (userInput === '') {
             userInput = 'Mr. Nobody';
             movie();
@@ -51,32 +51,23 @@ switch (command) {
 }
 
 function bands() {
-var bandQueryURL = "https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp"
-
-axios.get(bandQueryURL).then(function(response) {
-    var response = response.data
-    //console.log(response)
-    response.forEach(function(event){    
-    //var offer = response.map(item => item.offers);
-    var eventTime = event.datetime
-    console.log("Venue: ", event.venue.name)
-    console.log("Venue Location: ", event.venue.city, ", " ,event.venue.region, event.venue.country)
-    console.log("Date of Event: ", event.datetime, '\n')
-
-    console.log(eventTime)
-    //console.log(moment.format(event.datetime, 'MM DD YYYY'))
-    console.log(moment(eventTime, "M").format("M"))//this is incorrect
-    console.log(moment(eventTime, "DD").format("DD"))//this is incorrect
-    console.log(moment(eventTime, "YYYY").format("YYYY"))//this may or may not be correct
-    
+    var bandQueryURL = "https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp"
+    axios.get(bandQueryURL).then(function (response) {
+        var response = response.data
+        //console.log(response)
+        response.forEach(function (event) {
+            //var offer = response.map(item => item.offers);
+            var eventTime = event.datetime
+            var eventTimeFormatted = moment(eventTime).format("MM/DD/YYYY")
+            console.log("Venue: ", event.venue.name)
+            console.log("Venue Location: ", event.venue.city, ", ", event.venue.region, event.venue.country)
+            console.log("Date of Event: ", eventTimeFormatted, '\n')
+        })
     })
-})
 }
 
 function movie() {
     var queryURL = "http://www.omdbapi.com/?t=" + userInput + "&y=&plot=short&apikey=d7cb222c";
-    //console.log(queryURL)
-
     axios.get(queryURL).then(function (response) {
         var responseInfo = response.data;
         //console.log(responseInfo);
@@ -100,10 +91,12 @@ function spotifySearch() {
             return console.log('Error occurred: ' + err);
         }
         var spotifyInfo = data.tracks.items[0]
+        //console.log(data.tracks.items[0])
         var searchData = [
             "Artists: " + spotifyInfo.album.artists[0].name,
             "Song Name: " + spotifyInfo.name,
-            "Song Preview(?): " + spotifyInfo.album.external_urls.spotify,
+            // "Entire Song: " + spotifyInfo.album.external_urls.spotify,
+            "Song Preview: " + spotifyInfo.preview_url,
             "Album Name: " + spotifyInfo.album.name
         ].join('\n')
         console.log(searchData)
@@ -111,15 +104,15 @@ function spotifySearch() {
 }
 
 function doSays() {
-    fs.readFile("random.txt", "utf8", function(err, data){
+    fs.readFile("random.txt", "utf8", function (err, data) {
         if (err) {
             return console.log(err);
-        } 
-       // console.log("original text: ", data);
+        }
+        // console.log("original text: ", data);
         dataSplit = data.split('\n') //splits each line of text into dataSplit array
         //console.log(dataSplit)
 
-        dataSplit.forEach(function(item){ //loops through array
+        dataSplit.forEach(function (item) { //loops through array
             itemArr = item.split(',') //splits strings in array
             // console.log("Item Array: ", itemArr)
             command = itemArr[0]
