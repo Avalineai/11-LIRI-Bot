@@ -59,9 +59,13 @@ function bands() {
             //var offer = response.map(item => item.offers);
             var eventTime = event.datetime
             var eventTimeFormatted = moment(eventTime).format("MM/DD/YYYY")
-            console.log("Venue: ", event.venue.name)
-            console.log("Venue Location: ", event.venue.city, ", ", event.venue.region, event.venue.country)
-            console.log("Date of Event: ", eventTimeFormatted, '\n')
+            var bandData = [
+                "Venue: " + event.venue.name,
+                "Venue Location: " + event.venue.city + ", " + event.venue.region + " " + event.venue.country,
+                "Date of Event: " + eventTimeFormatted,
+                "--------------------------------------"
+            ].join("\n\n")
+            console.log(bandData)
         })
     })
 }
@@ -79,7 +83,8 @@ function movie() {
             "Country Produced: " + responseInfo.Country,
             "Language: " + responseInfo.Language,
             "Plot: " + responseInfo.Plot,
-            "Actors: " + responseInfo.Actors
+            "Actors: " + responseInfo.Actors,
+            "--------------------------------------"
         ].join("\n\n")
         console.log(movieData)
     });
@@ -97,7 +102,8 @@ function spotifySearch() {
             "Song Name: " + spotifyInfo.name,
             // "Entire Song: " + spotifyInfo.album.external_urls.spotify,
             "Song Preview: " + spotifyInfo.preview_url,
-            "Album Name: " + spotifyInfo.album.name
+            "Album Name: " + spotifyInfo.album.name,
+            "--------------------------------------"
         ].join('\n')
         console.log(searchData)
     });
