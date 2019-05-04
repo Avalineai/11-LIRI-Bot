@@ -14,9 +14,13 @@ var userInput = process.argv.slice(3).join(" ");
 // concert-this - *done*
 // spotify-this-song *done for now, but can clean up code
 // movie-this *done for now, but can clean up axios function use
-// do-what-it-says *need to add math random feature to do different commands..
+// do-what-it-says *concert-this does not work for some reason...
 
 var command = process.argv[2]
+
+commandSwitch()
+
+function commandSwitch() {
 switch (command) {
     case "concert-this":
         bands()
@@ -48,6 +52,7 @@ switch (command) {
 
     default:
         console.log("Choose a valid command");
+}
 }
 
 function bands() {
@@ -104,7 +109,7 @@ function spotifySearch() {
             "Song Preview: " + spotifyInfo.preview_url,
             "Album Name: " + spotifyInfo.album.name,
             "--------------------------------------"
-        ].join('\n')
+        ].join('\n\n')
         console.log(searchData)
     });
 }
@@ -115,21 +120,16 @@ function doSays() {
             return console.log(err);
         }
         // console.log("original text: ", data);
-        dataSplit = data.split('\n') //splits each line of text into dataSplit array
+        var dataSplit = data.split('\n') //splits each line of text into dataSplit array
         //console.log(dataSplit)
+        var dataSplitRand = dataSplit[Math.floor(Math.random() * dataSplit.length)]
+        //console.log(dataSplitRand)
+        var splitRandCommInp = dataSplitRand.split(',')
+        command = splitRandCommInp[0]
+        userInput = splitRandCommInp[1]
+        //console.log(command)
+        //console.log(userInput)
+        commandSwitch()
 
-        dataSplit.forEach(function (item) { //loops through array
-            itemArr = item.split(',') //splits strings in array
-            // console.log("Item Array: ", itemArr)
-            command = itemArr[0]
-            userInput = itemArr[1]
-            console.log(command)
-            console.log(userInput)
-            if (command === 'spotify-this-song') {
-                spotifySearch()
-            } else {
-                movie()
-            }
-        })
     })
 }
