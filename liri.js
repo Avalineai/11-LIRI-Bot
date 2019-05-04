@@ -12,9 +12,9 @@ var userInput = process.argv.slice(3).join(" ");
 
 // liri commands:
 // concert-this - *done*
-// spotify-this-song *done for now, but can clean up code
+// spotify-this-song *done for now, need to fix 'null' result
 // movie-this *done for now, but can clean up axios function use
-// do-what-it-says *concert-this does not work for some reason...
+// do-what-it-says *concert-need to remove quotes from second portion of array
 
 var command = process.argv[2]
 
@@ -46,12 +46,11 @@ switch (command) {
         break;
 
     case "do-what-it-says":
-        console.log("do-what-it-says");
         doSays();
         break;
 
     default:
-        console.log("Choose a valid command");
+        console.log("\nChoose a valid command: \n\nconcert-this + <desired search term>\nspotify-this-song + <desired search term>\nmovie-this + <desired search term>\ndo-what-it-says (app will choose at random)\n\n");
 }
 }
 
@@ -130,16 +129,21 @@ function doSays() {
             return console.log(err);
         }
         // console.log("original text: ", data);
+        function splitData(){
         var dataSplit = data.split('\n') //splits each line of text into dataSplit array
         //console.log(dataSplit)
         var dataSplitRand = dataSplit[Math.floor(Math.random() * dataSplit.length)]
         //console.log(dataSplitRand)
         var splitRandCommInp = dataSplitRand.split(',')
         command = splitRandCommInp[0]
-        userInput = splitRandCommInp[1]
-        //console.log(command)
-        //console.log(userInput)
+        userInput = splitRandCommInp[1]//this needs to remove quotes, because concert-this "band name" does not work
+        console.log(command)
+        console.log(userInput)
+        }
+        splitData()
         commandSwitch()
 
     })
 }
+
+
