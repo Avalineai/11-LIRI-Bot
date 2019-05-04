@@ -80,11 +80,21 @@ function movie() {
     axios.get(queryURL).then(function (response) {
         var responseInfo = response.data;
         //console.log(responseInfo);
+        var ratingsArr = responseInfo.Ratings
+        // console.log(ratingsArr)
+        // console.log(ratingsArr.length)
+        var rottenTom = ""
+        if (ratingsArr.length === 1) {
+            rottenTom = "Unavailable"
+        } else {
+            rottenTom = responseInfo.Ratings[1].Value
+        }
+        //console.log(rottenTom)
         var movieData = [
             "Title: " + responseInfo.Title,
             "Release Year: " + responseInfo.Year,
             "IMDB Rating: " + responseInfo.imdbRating,
-            "Rotten Tomatoes Rating: " + responseInfo.Ratings[1].Value,
+            "Rotten Tomatoes Rating: " + rottenTom,
             "Country Produced: " + responseInfo.Country,
             "Language: " + responseInfo.Language,
             "Plot: " + responseInfo.Plot,
