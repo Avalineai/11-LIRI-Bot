@@ -46,3 +46,667 @@ Date of Event: 11/01/2019
 concert-this Imagine Dragons
 --------------------------------------
 
+Venue: iHeartRadio KIIS FM Wango Tango
+
+Venue Location: Carson, CA United States
+
+Date of Event: 06/01/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this taylor swift
+--------------------------------------
+
+Title: I Am Legend
+
+Release Year: 2007
+
+IMDB Rating: 7.2
+
+Rotten Tomatoes Rating: 69%
+
+Country Produced: USA
+
+Language: English
+
+Plot: Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.
+
+Actors: Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield
+
+--------------------------------------
+--------------------------------------
+
+movie-this i am legend
+--------------------------------------
+
+Artists: OneRepublic
+
+Song Name: Counting Stars
+
+Entire Song: https://open.spotify.com/album/2bbhW5ifCwOYM8DMkqoYBF
+
+Album Name: Native
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song counting stars
+--------------------------------------
+
+Title: Dr. Strange
+
+Release Year: 1978
+
+IMDB Rating: 5.4
+
+Rotten Tomatoes Rating: Unavailable
+
+Country Produced: USA
+
+Language: English
+
+Plot: A psychiatrist becomes the new Sorcerer Supreme of the Earth in order to battle an evil Sorceress from the past.
+
+Actors: Peter Hooten, Clyde Kusatsu, Jessica Walter, Anne-Marie Martin
+
+--------------------------------------
+--------------------------------------
+
+movie-this Dr. Strange
+--------------------------------------
+
+spotify-this-song The Sign Ace of Base
+--------------------------------------
+
+Artists: Ace of Base
+
+Song Name: The Sign
+
+Song Preview: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=7485bb3cfbb74a85ad64f5fec558e4aa
+
+Album Name: The Sign (US Album) [Remastered]
+
+--------------------------------------
+--------------------------------------
+
+Title: Mr. Nobody
+
+Release Year: 2009
+
+IMDB Rating: 7.8
+
+Rotten Tomatoes Rating: 67%
+
+Country Produced: Belgium, Germany, Canada, France, USA, UK
+
+Language: English, Mohawk
+
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+--------------------------------------
+--------------------------------------
+
+movie-this Mr. Nobody
+--------------------------------------
+
+Venue: GROUPAMA STADIUM
+
+Venue Location: Decines Charpieu,  France
+
+Date of Event: 05/26/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Visarno Arena
+
+Venue Location: Florence,  Italy
+
+Date of Event: 06/14/2019
+
+--------------------------------------
+--------------------------------------
+
+Venue: Estadio da Luz
+
+Venue Location: Lisbon,  Portugal
+
+Date of Event: 06/02/2019
+
+--------------------------------------
+--------------------------------------
+
+Venue: Stadio San Siro
+
+Venue Location: Milano,  Italy
+
+Date of Event: 06/19/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Hockenheim-Ring GmbH
+
+Venue Location: Hockenheim,  Germany
+
+Date of Event: 06/22/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Wörthersee Stadion
+
+Venue Location: Klagenfurt,  Austria
+
+Date of Event: 06/29/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: NATIONAL ARENA
+
+Venue Location: Bucuresti,  Romania
+
+Date of Event: 07/03/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Letnany Aerodrome
+
+Venue Location: Prague,  Czech Republic
+
+Date of Event: 07/08/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Otkritie Arena
+
+Venue Location: Moscow,  Russia
+
+Date of Event: 07/19/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Theatre Royal Haymarket
+
+Venue Location: London,  United Kingdom
+
+Date of Event: 07/14/2019
+
+--------------------------------------
+--------------------------------------
+
+Venue: Malmi Airport
+
+Venue Location: Helsinki,  Finland
+
+Date of Event: 07/23/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Tusindårsskoven
+
+Venue Location: Odense,  Denmark
+
+Date of Event: 07/27/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Messegelände
+
+Venue Location: Hannover,  Germany
+
+Date of Event: 08/03/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Ile Obudai / Hongrie
+
+Venue Location: Budapest,  Hungary
+
+Date of Event: 08/07/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Laugardalsvöllur
+
+Venue Location: Reykjavik,  Iceland
+
+Date of Event: 08/11/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Chantry Park
+
+Venue Location: Suffolk Hill,  United Kingdom
+
+Date of Event: 08/25/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Venue: Chantry Park, IP2 0BS
+
+Venue Location: Ipswich,  United Kingdom
+
+Date of Event: 08/26/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+concert-this ed sheeran
+--------------------------------------
+
+Artists: The All-American Rejects
+
+Song Name: Move Along
+
+Entire Song: https://open.spotify.com/album/3PWEGZ6CYvXRnr0JCECsDe
+
+Album Name: Move Along
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song move along
+--------------------------------------
+
+Artists: Parachute
+
+Song Name: She Is Love
+
+Entire Song: https://open.spotify.com/album/1xUlpEzwUautb4HYaVazLh
+
+Album Name: Losing Sleep
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song parachute she is love
+--------------------------------------
+
+Artists: Sam Smith
+
+Song Name: Stay With Me
+
+Entire Song: https://open.spotify.com/album/08jWgM4vSkTose4blKBWov
+
+Album Name: In The Lonely Hour
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song sam smith stay with me
+--------------------------------------
+
+Artists: Backstreet Boys
+
+Song Name: I Want It That Way
+
+Song Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=7485bb3cfbb74a85ad64f5fec558e4aa
+
+Album Name: The Hits--Chapter One
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song i want it that way
+--------------------------------------
+
+Title: The Matrix
+
+Release Year: 1999
+
+IMDB Rating: 8.7
+
+Rotten Tomatoes Rating: 88%
+
+Country Produced: USA
+
+Language: English
+
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+
+--------------------------------------
+--------------------------------------
+
+movie-this the matrix
+--------------------------------------
+
+Artists: The All-American Rejects
+
+Song Name: Move Along
+
+Entire Song: https://open.spotify.com/album/3PWEGZ6CYvXRnr0JCECsDe
+
+Album Name: Move Along
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song Move Along
+--------------------------------------
+
+Title: Deadpool
+
+Release Year: 2016
+
+IMDB Rating: 8.0
+
+Rotten Tomatoes Rating: 84%
+
+Country Produced: USA
+
+Language: English
+
+Plot: A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.
+
+Actors: Ryan Reynolds, Karan Soni, Ed Skrein, Michael Benyaer
+
+--------------------------------------
+--------------------------------------
+
+movie-this Deadpool
+--------------------------------------
+
+Venue: GROUPAMA STADIUM
+
+Venue Location: Decines Charpieu,  France
+
+Date of Event: 05/26/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Estadio da Luz
+
+Venue Location: Lisbon,  Portugal
+
+Date of Event: 06/02/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Visarno Arena
+
+Venue Location: Florence,  Italy
+
+Date of Event: 06/14/2019
+
+--------------------------------------
+--------------------------------------
+
+Venue: Stadio San Siro
+
+Venue Location: Milano,  Italy
+
+Date of Event: 06/19/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Hockenheim-Ring GmbH
+
+Venue Location: Hockenheim,  Germany
+
+Date of Event: 06/22/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Wörthersee Stadion
+
+Venue Location: Klagenfurt,  Austria
+
+Date of Event: 06/29/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: NATIONAL ARENA
+
+Venue Location: Bucuresti,  Romania
+
+Date of Event: 07/03/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Letnany Aerodrome
+
+Venue Location: Prague,  Czech Republic
+
+Date of Event: 07/08/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Theatre Royal Haymarket
+
+Venue Location: London,  United Kingdom
+
+Date of Event: 07/14/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Otkritie Arena
+
+Venue Location: Moscow,  Russia
+
+Date of Event: 07/19/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Malmi Airport
+
+Venue Location: Helsinki,  Finland
+
+Date of Event: 07/23/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Tusindårsskoven
+
+Venue Location: Odense,  Denmark
+
+Date of Event: 07/27/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Messegelände
+
+Venue Location: Hannover,  Germany
+
+Date of Event: 08/03/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Ile Obudai / Hongrie
+
+Venue Location: Budapest,  Hungary
+
+Date of Event: 08/07/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Laugardalsvöllur
+
+Venue Location: Reykjavik,  Iceland
+
+Date of Event: 08/11/2019
+
+--------------------------------------
+--------------------------------------
+
+Venue: Chantry Park
+
+Venue Location: Suffolk Hill,  United Kingdom
+
+Date of Event: 08/25/2019
+
+--------------------------------------
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+concert-this Ed Sheeran
+--------------------------------------
+
+Venue: Chantry Park, IP2 0BS
+
+Venue Location: Ipswich,  United Kingdom
+
+Date of Event: 08/26/2019
+
+--------------------------------------
+--------------------------------------
+
+Artists: Ace of Base
+
+Song Name: The Sign
+
+Song Preview: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=7485bb3cfbb74a85ad64f5fec558e4aa
+
+Album Name: The Sign (US Album) [Remastered]
+
+--------------------------------------
+--------------------------------------
+
+spotify-this-song The Sign Ace of Base
+--------------------------------------
+
+Title: Mr. Nobody
+
+Release Year: 2009
+
+IMDB Rating: 7.8
+
+Rotten Tomatoes Rating: 67%
+
+Country Produced: Belgium, Germany, Canada, France, USA, UK
+
+Language: English, Mohawk
+
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+--------------------------------------
+--------------------------------------
+
+movie-this Mr. Nobody
+--------------------------------------
+

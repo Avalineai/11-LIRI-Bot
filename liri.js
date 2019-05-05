@@ -2,25 +2,13 @@ require("dotenv").config();
 var axios = require("axios");
 var fs = require("fs");
 var moment = require("moment");
-
 var Spotify = require('node-spotify-api');
 var keys = require("./keys.js");
-
 var spotify = new Spotify(keys.spotify);
 var command = process.argv[2]
 var userInput = process.argv.slice(3).join(" ")//.replace(/'/g, '%27')//.replace('\'', '\\\''); 
-
 // for actual user use, use inquirer for user input to circumvent apostrophe issue.
 //node process.argv will always read apostrophe as something to be used for something
-// liri commands:
-// concert-this - *done*
-// spotify-this-song *done for now, fixed 'null' result
-// movie-this *done for now, but does not work with "Pan's Labyrinth"
-//user input to include movies with ' must be in double quotes i.e.
-//search "Pan's Labryinth", or use escape character: Pan\'s Labryinth
-
-// do-what-it-says *concert-quotes from random.txt 2nd portion of array are now removed
-
 commandSwitch()
 
 function commandSwitch() {
@@ -162,7 +150,6 @@ function doSays() {
         commandSwitch()
     })
 }
-
 function addToLog(data) {
     var divider = "\n--------------------------------------\n\n";
     fs.appendFile("log.txt", data + divider, function (err) {
